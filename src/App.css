@@ -9,31 +9,140 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: #fff;
 }
 
 .App-link {
-  color: rgb(112, 76, 182);
+  color: #61dafb;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    transform: translateY(10px);
+  to {
+    transform: rotate(360deg);
   }
-  100% {
-    transform: translateY(0px);
+}
+h3 {
+  margin-left: 24px;
+  color: #fff !important;
+}
+#update {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  /* z-index: 15; */
+  top: 5%;
+  left: 5%;
+  /* margin: -100px 0 0 -150px; */
+}
+
+#btn {
+  margin-left: 25%;
+}
+.container {
+  margin-top: 32px;
+  min-width: 684px;
+  max-width: 1024px;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 684px;
   }
+}
+.profile {
+  text-align: center;
+}
+.profile-item {
+  /* text-align: center; */
+  padding-top: 0.5%;
+
+  width: 70%;
+  text-align: center;
+}
+/* .profile-p{
+    width: 50%;
+    text-align: center;
+    
+  } */
+#tab {
+  margin-right: 8px;
+  margin-left: 40%;
+}
+#header {
+  background-color: rgb(2, 175, 161);
+}
+#body {
+  background-color: rgb(4, 4, 7);
+}
+#label {
+  color: rgb(2, 175, 161);
+}
+
+.form-group {
+  margin: 16px;
+}
+.card-header {
+  padding-top: 32px !important;
+  border-bottom: none;
+}
+.paginationBttns {
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: #fff !important;
+  background-color: #0d6efd;
+}
+
+.paginationActive a {
+  color: #fff !important;
+  background-color: #0d6efd;
+}
+
+.paginationDisabled a {
+  color: #fff;
+  background-color: grey;
+}
+th {
+  padding-left: 16px !important;
+}
+a.btn {
+  text-align: left !important;
+}
+.td__button {
+  width: 100% !important;
+}
+.td__actions {
+  text-align: right !important;
+  padding-right: 24px !important;
+}
+.td__actions-buttons {
+  text-align: right !important;
 }
