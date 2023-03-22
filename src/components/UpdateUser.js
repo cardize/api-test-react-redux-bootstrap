@@ -91,20 +91,16 @@ const UpdateUser = () => {
               </div>
               <br></br>
               <div className='form-group'>
+                <Button href='/' className='w-30 float-right' variant='primary'>
+                  Back
+                </Button>
                 <Button
+                  id='btn'
                   onChange={handleTextChange}
                   className='w-30 float-right'
                   type='submit'
                 >
                   Edit User
-                </Button>
-                <Button
-                  id='btn'
-                  href='/'
-                  className='w-30 float-right'
-                  variant='primary'
-                >
-                  Back
                 </Button>
               </div>
             </Card.Body>
