@@ -46,7 +46,7 @@ const UpdateUser = () => {
   }
 
   return (
-    <div className='container' id='update'>
+    <div className='container container-small' id='update'>
       <Card className={'border border-dark bg-dark text-white'}>
         <Card.Header>
           <h3>Edit User</h3>
@@ -61,7 +61,7 @@ const UpdateUser = () => {
                   name='name'
                   onChange={handleTextChange}
                   value={name || ''}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   required
                 />
               </div>
@@ -72,7 +72,7 @@ const UpdateUser = () => {
                   name='email'
                   onChange={handleTextChange}
                   value={email || ''}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   required
                 />
               </div>
@@ -81,7 +81,7 @@ const UpdateUser = () => {
                 <Form.Select
                   onChange={handleSelectChange}
                   value={gender}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   aria-label='Default select example'
                 >
                   <option>Select Gender</option>
@@ -90,7 +90,7 @@ const UpdateUser = () => {
                 </Form.Select>
               </div>
               <br></br>
-              <div className='form-group'>
+              <div className='form-group form-group__buttons'>
                 <Button href='/' className='w-30 float-right' variant='primary'>
                   Back
                 </Button>

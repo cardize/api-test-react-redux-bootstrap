@@ -58,6 +58,10 @@ h3 {
   min-width: 684px;
   max-width: 1024px;
 }
+.container-small {
+  min-width: 342px;
+  max-width: 512px;
+}
 @media (max-width: 480px) {
   .container {
     width: 684px;
@@ -66,6 +70,7 @@ h3 {
 .profile {
   text-align: center;
 }
+
 .profile-item {
   /* text-align: center; */
   padding-top: 0.5%;
@@ -94,6 +99,11 @@ h3 {
 
 .form-group {
   margin: 16px;
+}
+.form-group__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .card-header {
   padding-top: 32px !important;

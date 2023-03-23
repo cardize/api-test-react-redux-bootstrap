@@ -36,7 +36,7 @@ class AddUser extends Component {
 
   render() {
     return (
-      <div className='container' id='update'>
+      <div className='container container-small' id='update'>
         <Card className={'border border-dark bg-dark text-white'}>
           <Card.Header>
             <h3>Add User</h3>
@@ -51,7 +51,7 @@ class AddUser extends Component {
                     name='name'
                     onChange={this.handleTextChange}
                     value={this.state.name}
-                    className='form-control w-50 p-2'
+                    className='form-control p-2'
                     required
                   />
                 </div>
@@ -62,7 +62,7 @@ class AddUser extends Component {
                     name='email'
                     onChange={this.handleTextChange}
                     value={this.state.email}
-                    className='form-control w-50 p-2'
+                    className='form-control p-2'
                     required
                   />
                 </div>
@@ -71,7 +71,7 @@ class AddUser extends Component {
                   <Form.Select
                     onChange={this.handleSelectChange}
                     value={this.state.gender}
-                    className='form-control w-50 p-2'
+                    className='form-control p-2'
                     aria-label='Default select example'
                   >
                     <option>Select Gender</option>
@@ -81,7 +81,7 @@ class AddUser extends Component {
                 </div>
                 <br></br>
 
-                <div className='form-group'>
+                <div className='form-group form-group__buttons'>
                   <Button className='btn btn-primary' type='submit'>
                     Add User
                   </Button>

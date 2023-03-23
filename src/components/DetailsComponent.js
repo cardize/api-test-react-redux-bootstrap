@@ -28,19 +28,19 @@ const ViewDetails = () => {
   const { name, email, gender, status } = state
 
   return (
-    <div className='container' id='update'>
+    <div className='container container-small' id='update'>
       <Card className={'border border-dark bg-dark text-white'}>
         <Card.Header>
           <h3>User Detail</h3>
         </Card.Header>
         <Form>
           <Card.Body id='body'>
-            <div className='container'>
+            <div>
               <div className='form-group'>
                 <label>Name:</label>
                 <input
                   value={name}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   required
                   disabled
                 />
@@ -49,7 +49,7 @@ const ViewDetails = () => {
                 <label>E-Mail::</label>
                 <input
                   value={email}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   required
                   disabled
                 />
@@ -58,7 +58,7 @@ const ViewDetails = () => {
                 <label>Gender:</label>
                 <input
                   value={gender}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   required
                   disabled
                 />
@@ -67,13 +67,13 @@ const ViewDetails = () => {
                 <label>Status:</label>
                 <input
                   value={status}
-                  className='form-control w-50 p-2'
+                  className='form-control p-2'
                   required
                   disabled
                 />
               </div>
               <br></br>
-              <div className='form-group'>
+              <div className='form-group form-group__buttons'>
                 <Button href='/' className='w-30 float-right' type='submit'>
                   Back
                 </Button>

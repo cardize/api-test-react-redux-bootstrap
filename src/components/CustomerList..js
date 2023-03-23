@@ -15,7 +15,7 @@ const UsersList = () => {
 
   const { users } = useSelector((state) => state.user)
 
-  const usersPerPage = 4
+  const usersPerPage = 6
   const pagesVisited = pageNumber * usersPerPage
   const pageCount = Math.ceil(users.length / usersPerPage)
 
