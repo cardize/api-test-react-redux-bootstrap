@@ -3,7 +3,7 @@ import { addUser, getUser, getUsers, deleteUser, updateUser } from './actions'
 import axios from 'axios'
 
 export const addUserAction = (user) => {
-  const token = 'Bearer ---TOKEN---'
+  const token = 'Bearer TOKEN'
   return (dispatch) => {
     axios
       .post('https://gorest.co.in/public/v2/users', user, {
@@ -23,7 +23,7 @@ export const addUserAction = (user) => {
 }
 
 export const getUserAction = (id) => {
-  const token = 'Bearer ---TOKEN---'
+  const token = 'Bearer TOKEN'
   return (dispatch) => {
     axios
       .get(`https://gorest.co.in/public/v2/users/${id}`, {
@@ -42,10 +42,10 @@ export const getUserAction = (id) => {
 }
 
 export const getUsersAction = () => {
-  const token = 'Bearer ---TOKEN---'
+  const token = 'Bearer TOKEN'
   return (dispatch) => {
     axios
-      .get('https://gorest.co.in/public/v2/users', {
+      .get('https://gorest.co.in/public/v2/users?page=1&per_page=40', {
         headers: {
           Authorization: token,
         },
@@ -61,7 +61,7 @@ export const getUsersAction = () => {
 }
 
 export const deleteUserAction = (id) => {
-  const token = 'Bearer ---TOKEN---'
+  const token = 'Bearer TOKEN'
   return (dispatch) => {
     axios
       .delete(`https://gorest.co.in/public/v2/users/${id}`, {
@@ -81,7 +81,7 @@ export const deleteUserAction = (id) => {
 }
 
 export const updateUserAction = (user, id) => {
-  const token = 'Bearer ---TOKEN---'
+  const token = 'Bearer TOKEN'
   return (dispatch) => {
     axios
       .put(`https://gorest.co.in/public/v2/users/${id}`, user, {
