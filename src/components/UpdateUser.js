@@ -94,12 +94,7 @@ const UpdateUser = () => {
                 <Button href='/' className='w-30 float-right' variant='primary'>
                   Back
                 </Button>
-                <Button
-                  id='btn'
-                  onChange={handleTextChange}
-                  className='w-30 float-right'
-                  type='submit'
-                >
+                <Button id='btn' className='w-30 float-right' type='submit'>
                   Edit User
                 </Button>
               </div>

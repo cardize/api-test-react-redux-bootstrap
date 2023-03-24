@@ -1,4 +1,5 @@
 export const ActionTypes = {
+  ON_LOGIN: 'ON_LOGIN',
   UPDATE_USER: 'UPDATE_USER',
   GET_USER: 'GET_USER',
   GET_USERS: 'GET_USERS',
